@@ -8,17 +8,17 @@
   </head>
   <body class="mixpanel-platform-body">
     <div class="mixpanel-platform-section">
-      <div id="eventSelect" style="float: left;"></div>
-      
+      <div class="eventSelect" id="eventSelect1" style="float: left;"></div>
       <div id="dateSelect" style="float: right;"></div>
       <div style="clear: both;"></div>
-      <div id="eventSelect2" style="float:left;"></div>
-      <div id="graph"></div>
+      <div class="eventSelect" id="eventSelect2" style="float:left;"></div>
     </div>
     <div id="table"></div>
     <script>
-      var eventSelect = $('#eventSelect').MPEventSelect();
-      var eventSelect2 = $('#eventSelect2').MPEventSelect();
+      var eventSelects = [];
+      eventSelects.push($('#eventSelect1').MPEventSelect());
+      eventSelects.push($('#eventSelect2').MPEventSelect());
+      var eventCount = eventSelects.length;
       var dateSelect  = $('#dateSelect').MPDatepicker();
       
     </script>
