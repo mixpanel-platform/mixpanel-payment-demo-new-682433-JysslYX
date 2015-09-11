@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.mxpnl.com/libs/mixpanel-platform/css/reset.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.mxpnl.com/libs/mixpanel-platform/build/mixpanel-platform.v0.latest.min.css">
     <script src="https://cdn.mxpnl.com/libs/mixpanel-platform/build/mixpanel-platform.v0.latest.min.js"></script>
+    <script src="jquery-1.11.3.min.js"></script>
   </head>
   <body class="mixpanel-platform-body">
     <div class="mixpanel-platform-section">
@@ -21,6 +22,9 @@
       var eventCount = eventSelects.length;
       var dateSelect  = $('#dateSelect').MPDatepicker();
       
+      $( ".eventSelect" ).click(function() {
+        alert('Hello world!'); 
+      }
     </script>
   </body>
 </html>
