@@ -14,7 +14,7 @@
       <div class="eventSelect" id="eventSelect2" style="float:left;"></div>
     </div>
     <br clear="all" /><button id="addEvent" onclick="addEvent()">Add Event</button>
-    <br clear="all" />
+    <br clear="all" /><br clear="all" />
     <button id="calculateResults" onclick="calculateResults()">Calculate Results</button>
     <div id="table"></div>
     <script>
@@ -27,7 +27,7 @@
       function addEvent(){
         var div = document.getElementById('mixpanel-platform-selection');
         eventCount++;
-        var HTMLString = '<br clear="all" /><div class="eventSelect" id="eventSelect'+eventCount+'" style="float:left;"></div>';
+        var HTMLString = '<br clear="all" /><br clear="all" /><div class="eventSelect" id="eventSelect'+eventCount+'" style="float:left;"></div>';
         console.log(HTMLString);
         div.innerHTML = div.innerHTML + HTMLString;
         var eventID = '#eventSelect'+eventCount;
