@@ -28,16 +28,14 @@
         var div = document.getElementById('mixpanel-platform-selection');
         eventCount++;
         var HTMLString = '<br clear="all" /><br clear="all" /><div class="eventSelect" id="eventSelect'+eventCount+'" style="float:left;"></div>';
-        console.log(HTMLString);
         div.innerHTML = div.innerHTML + HTMLString;
         var eventID = '#eventSelect'+eventCount;
-        console.log(eventID);
         eventSelects.push($(eventID).MPEventSelect());
       }
       
       function calculateResults(){
         for(var i = 0; i < eventSelects.length; i++){
-          eventSelects[i];
+          console.log(eventSelects[i]);
         }
       }
     </script>
