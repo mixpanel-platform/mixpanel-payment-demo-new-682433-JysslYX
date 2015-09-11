@@ -25,7 +25,11 @@
       var dateSelect  = $('#dateSelect').MPDatepicker();
       
       function addEvent(){
-        
+        var div = document.getElementById('mixpanel-platform-selection');
+        eventCount++;
+        div.innerHTML = div.innerHTML + '<br clear="all" /><div class="eventSelect" id="eventSelect'+eventCount+'" style="float:left;></div>';
+        var eventID = '#eventSelect'+eventCount;
+        eventSelects.push($(eventID).MPEventSelect());
       }
       
       function calculateResults(){
