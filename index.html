@@ -13,7 +13,9 @@
       <div style="clear: both;"></div>
       <div class="eventSelect" id="eventSelect2" style="float:left;"></div>
     </div>
-    <br clear="all" /><button id="addEvent">Add Event</button>
+    <br clear="all" /><button id="addEvent" onclick="addEvent()">Add Event</button>
+    <br clear="all" />
+    <button id="calculateResults" onclick="calculateResults()">Calculate Results</button>
     <div id="table"></div>
     <script>
       var eventSelects = [];
@@ -22,9 +24,13 @@
       var eventCount = eventSelects.length;
       var dateSelect  = $('#dateSelect').MPDatepicker();
       
-      $( "#addEvent" ).click(function() {
-        console.log("Click 1"); 
-      });
+      function addEvent(){
+        
+      }
+      
+      function calculateResults(){
+        
+      }
     </script>
   </body>
 </html>
