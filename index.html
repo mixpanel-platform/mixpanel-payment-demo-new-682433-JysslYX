@@ -29,6 +29,7 @@
         eventCount++;
         div.innerHTML = div.innerHTML + '<br clear="all" /><div class="eventSelect" id="eventSelect'+eventCount+'" style="float:left;></div>';
         var eventID = '#eventSelect'+eventCount;
+        console.log(eventID);
         eventSelects.push($(eventID).MPEventSelect());
       }
       
