@@ -36,7 +36,7 @@
       function calculateResults(){
         //for(var i = 0; i < eventSelects.length; i++){
           //console.log(eventSelects[i].MPEventSelect('value'));
-          MP.api.funnel(eventSelects[0].MPEventSelect('value'),eventSelects[0].MPEventSelect('value')).done(function(results) {
+          MP.api.funnel(eventSelects[0].MPEventSelect('value'),eventSelects[1].MPEventSelect('value')).done(function(results) {
               console.log(results);
           });
        //}
